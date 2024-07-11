@@ -1,0 +1,21 @@
+
+[user]
+	name = Yee Fay Lim
+	email = yeefay.lim@gmail.com
+
+[alias]
+	br = branch
+	cfg = config
+	chpck = cherry-pick
+	co = checkout
+	ci = commit
+ 	mg = merge
+	rb = rebase
+	rs = reset
+ 	rst = restore
+	st = status
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
